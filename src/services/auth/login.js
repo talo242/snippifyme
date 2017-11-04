@@ -1,6 +1,5 @@
 import firebase from 'firebase'
 
-
 function loginGitHub(){
     return new Promise((resolve, reject) => {
         const provider = new firebase.auth.GithubAuthProvider()

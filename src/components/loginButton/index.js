@@ -5,7 +5,7 @@ import loginService from '../../services/auth/login'
 class LoginButton extends Component {
     handleLogin(){
         loginService()
-        .then(( result) =>{
+        .then( (result) =>{
             let token = result.credential.accessToken
             let user = result.user
             console.log(token)
@@ -14,14 +14,14 @@ class LoginButton extends Component {
         .catch( (result) => {
             console.log(result)
         })
-  }
-  render() {
-    return (
-      <Button onClick={() => this.handleLogin()}>
-        <Icon name='github' /> GitHub
-      </Button>
-    )
-  }
+    }
+    render() {
+        return (
+            <Button onClick={() => this.handleLogin()}>
+                <Icon name='github' /> GitHub
+            </Button>
+        )
+    }
 }
 
 export default LoginButton
