@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Header, Segment } from 'semantic-ui-react'
-import LoginButton from '../../components/loginButton'
+import LoginButton from 'components/loginButton'
 import './login.css'
 
 class Login extends Component {

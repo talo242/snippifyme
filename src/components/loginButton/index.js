@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Icon } from 'semantic-ui-react'
-import loginService from '../../services/auth/login'
+import loginService from 'services/auth/login'
 
 class LoginButton extends Component {
     handleLogin(){

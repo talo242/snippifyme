@@ -11,9 +11,12 @@
     "semantic-ui-react": "^0.75.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env NODE_PATH=src react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "cross-env NODE_PATH=src react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1"
   }
 }
